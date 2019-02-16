@@ -1,0 +1,51 @@
+<web-app>
+   
+    <servlet>
+        <servlet-name>csvSearch</servlet-name>
+        <servlet-class>servlet.csvjdbc</servlet-class>
+    </servlet>
+    <servlet-mapping>
+        <servlet-name>csvSearch</servlet-name>
+        <url-pattern>/search.do</url-pattern>
+    </servlet-mapping>
+    
+    <servlet>
+        <servlet-name>Part</servlet-name>
+        <servlet-class>servlet.PartView</servlet-class>
+    </servlet>
+    <servlet-mapping>
+        <servlet-name>Part</servlet-name>
+        <url-pattern>/part</url-pattern>
+    </servlet-mapping>
+    
+    <servlet>
+        <servlet-name>Part5</servlet-name>
+        <servlet-class>servlet.Part5</servlet-class>
+    </servlet>
+    <servlet-mapping>
+        <servlet-name>Part5</servlet-name>
+        <url-pattern>/part5.do</url-pattern>
+    </servlet-mapping>
+    
+    <servlet>
+        <servlet-name>Cart</servlet-name>
+        <servlet-class>servlet.Cart</servlet-class>
+    </servlet>
+    <servlet-mapping>
+        <servlet-name>Cart</servlet-name>
+        <url-pattern>/cart.do</url-pattern>
+    </servlet-mapping>
+    
+    <servlet>
+        <servlet-name>dbMovie</servlet-name>
+        <servlet-class>servlet.part7</servlet-class>
+    </servlet>
+    <servlet-mapping>
+        <servlet-name>dbMovie</servlet-name>
+        <url-pattern>/movie.do</url-pattern>
+    </servlet-mapping>
+    
+    <welcome-file-list>
+        <welcome-file>index.jsp</welcome-file>
+    </welcome-file-list>    
+</web-app>

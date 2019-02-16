@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<!--
+To change this license header, choose License Headers in Project Properties.
+To change this template file, choose Tools | Templates
+and open the template in the editor.
+-->
+<html>
+    <head>
+        <title>Search Movie</title>
+        
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+          
+    </head>
+    <body>
+        <h1>Search Movies</h2>
+        <form action="movie.do" method="POST">
+            <p align="center"> <label> KeyWord:  </label><input type="text" name="keyWord" /></p></br>
+            <p align="center"><input type="radio" name="searchType" value="title" >Search by Title</p><br>
+            <p align="center"><input type="radio" name="searchType" value="actor" >Search by Actor</p><br>
+            <p align="center"><input type="radio" name="searchType" value="actress" >Search by Actress</p><br>
+             <p align="center"><input type= "hidden" name="part" value = "search"/></br>
+            
+             <p align="center"><input type="submit" value="Search Movie"/></p>
+        </form>
+    </body>
+</html>
